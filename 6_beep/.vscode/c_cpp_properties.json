@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/ubuntu/linux/IMX6ULL/Linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/include",
+                "/home/ubuntu/linux/IMX6ULL/Linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/include/uapi",
+                "/home/ubuntu/linux/IMX6ULL/Linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/include/generated",
+                "/home/ubuntu/linux/IMX6ULL/Linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/include/generated/uapi",
+                "/home/ubuntu/linux/IMX6ULL/Linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/arch/arm/include",
+                "/home/ubuntu/linux/IMX6ULL/Linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/arch/arm/include/uapi",
+                "/home/ubuntu/linux/IMX6ULL/Linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/arch/arm/include/generated"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "MODULE",
+                "CONFIG_ARM"
+            ],
+            "compilerPath": "/usr/bin/arm-linux-gnueabihf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}

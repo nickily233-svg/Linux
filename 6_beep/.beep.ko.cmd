@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/linux/IMX6ULL/Linux_Drivers/6_beep/beep.ko := /usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/ubuntu/linux/IMX6ULL/Linux_Drivers/6_beep/beep.ko /home/ubuntu/linux/IMX6ULL/Linux_Drivers/6_beep/beep.o /home/ubuntu/linux/IMX6ULL/Linux_Drivers/6_beep/beep.mod.o
