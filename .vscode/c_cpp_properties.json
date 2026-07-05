@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/1_hcsr501/compile_commands.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64",
+            "compileCommands": [
+                "${workspaceFolder}/Linux_Advanced/1_hcsr501/compile_commands.json"
+            ]
+        }
+    ],
+    "version": 4
+}
