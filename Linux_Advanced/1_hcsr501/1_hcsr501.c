@@ -93,6 +93,7 @@ static const struct of_device_id alientek_hcsr501[] =
         {/* sentinel */},
 };
 
+/* 真正的硬件和私有数据结构初始化 */
 static int hcsr501_probe(struct platform_device *pdev)
 {
     printk("%s %s line %d\n", __FILE__, __FUNCTION__, __LINE__);
@@ -104,6 +105,8 @@ static int hcsr501_probe(struct platform_device *pdev)
     hcsr501dev.irq = gpiod_to_irq(hcsr501dev.gpio);
     /* 4. 申请中断号 */
     request_irq(hcsr501dev.irq, hcsr501_irqhandler, IRQF_TRIGGER_RISING | IRQF_TRIGGER_FALLING, "irq_hcsr501", NULL);
+    /* 5. 初始化等待队列 */
+    init_waitqueue_head(&hcsr501dev.hcsr501_wq);
 
     /* 一、注册字符设备 */
     hcsr501dev.major = register_chrdev(hcsr501dev.major, "dev_hcsr501", &hcsr501_fops);
@@ -158,8 +161,6 @@ static struct platform_driver hcsr501_driver =
 /* 入口函数 */
 int hcsr501_init(void)
 {
-    init_waitqueue_head(&hcsr501dev.hcsr501_wq);
-
     return 0;
 }
 /* 出口函数 */
