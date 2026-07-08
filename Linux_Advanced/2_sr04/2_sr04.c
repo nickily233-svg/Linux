@@ -11,7 +11,11 @@
 #include <linux/delay.h>
 #include <linux/pid.h>
 
-static int sr04_open(struct file *filp, )
+static int sr04_open(struct inode *node, struct file *filp)
+{
+}
+
+static ssize_t sr04_read(struct file *filp, char __user *buf, size_t count, loff_t *offt)
 {
 }
 
