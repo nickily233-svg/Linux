@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Linux-ARM-Universal",
             "includePath": [
                 "${workspaceFolder}/**",
                 "/home/ubuntu/linux/IMX6ULL/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/include",
@@ -10,13 +10,15 @@
                 "/home/ubuntu/linux/IMX6ULL/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek/arch/arm/include/generated"
             ],
             "defines": [
-                "KERNEL",
+                "__KERNEL__",
                 "MODULE",
-                "CONFIG_ARM"
+                "CONFIG_ARM",
+                "CONFIG_ARCH_MULTIPLATFORM"
             ],
-            "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11",
-            "intelliSenseMode": "linux-clang-arm"
+            "compilerPath": "/usr/bin/arm-linux-gnueabihf-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm"
         }
     ],
     "version": 4
