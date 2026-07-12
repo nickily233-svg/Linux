@@ -19,6 +19,7 @@ struct sr04_dev
     int major;
     struct gpio_desc *trig_gpio;
     struct gpio_desc *echo_gpio;
+    int irq;
 };
 
 static struct sr04_dev sr04dev;

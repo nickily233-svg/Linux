@@ -20,12 +20,12 @@ kernel_modules:
 	$(MAKE) -C $(KERN_DIR) M="$(CURRENT_PATH)" ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) modules
 
 app:
-	$(CROSS_COMPILE)gcc -o sr04APP sr04APP.c
+	$(CROSS_COMPILE)gcc -o ds18b20APP ds18b20APP.c
 
 clean:
 	$(MAKE) -C $(KERN_DIR) M="$(CURRENT_PATH)" clean
-	rm -rf modules.order sr04APP
+	rm -rf modules.order ds18b20APP
 
 .PHONY: build kernel_modules clean app
 
-obj-m += 2_sr04_noirq.o
+obj-m += 4_ds18b20.o
