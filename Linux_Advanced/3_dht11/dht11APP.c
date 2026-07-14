@@ -10,7 +10,6 @@
 int main(int argc, char **argv)
 {
     int fd;
-    int ret;
     int data[4];
 
     if (argc != 2)

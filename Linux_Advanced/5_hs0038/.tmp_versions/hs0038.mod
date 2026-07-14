@@ -1,0 +1,2 @@
+/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/5_hs0038/hs0038.ko
+/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/5_hs0038/hs0038.o
