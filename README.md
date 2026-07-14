@@ -13,3 +13,5 @@
 涉及input，i2c，spi子系统的应用<br>
 涉及ft5426多点触摸屏的驱动的应用<br>
 涉及块设备的驱动实验<br>
+
+新增Linux_Advanced复习增强内容
