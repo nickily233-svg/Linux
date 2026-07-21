@@ -1,0 +1,2 @@
+/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_ioctl.ko
+/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_ioctl.o
