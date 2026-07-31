@@ -12,12 +12,12 @@ all:kernel_modules app
 kernel_modules:
 	$(MAKE) -C $(KERN_DIR) M="$(CURRENT_PATH)" ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) modules
 app:
-	$(COESS_COMPILE)gcc -o bmp280APP bmp280APP.c
+	$(COESS_COMPILE)gcc -o uartAPP uartAPP.c
 clean:
 	$(MAKE) -C $(KERN_DIR) M="$(CURRENT_PATH)" clean
-	rm -rf modules.order bmp280APP
+	rm -rf modules.order uartAPP
 # 伪目标
 .PHONY: build kernel_modules clean app
 
 # 编译成模块
-obj-m += bmp280_iio.o
+obj-m += uart.o

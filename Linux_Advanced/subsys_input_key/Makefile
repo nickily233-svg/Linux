@@ -7,17 +7,15 @@ KERN_DIR := /home/ubuntu/linux/IMX6ULL/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_a
 # 当前地址
 CURRENT_PATH = $(shell pwd)
 
-all:kernel_modules app
+all:kernel_modules
 
 kernel_modules:
 	$(MAKE) -C $(KERN_DIR) M="$(CURRENT_PATH)" ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) modules
-app:
-	$(COESS_COMPILE)gcc -o bmp280APP bmp280APP.c
 clean:
 	$(MAKE) -C $(KERN_DIR) M="$(CURRENT_PATH)" clean
-	rm -rf modules.order bmp280APP
+	rm -rf modules.order subsys_input_keyAPP
 # 伪目标
-.PHONY: build kernel_modules clean app
+.PHONY: build kernel_modules clean
 
 # 编译成模块
-obj-m += bmp280_iio.o
+obj-m += subsys_input_key.o

@@ -2,7 +2,7 @@
   {
     "arguments": [
       "/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc",
-      "-Wp,-MD,/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/.bmp280_iio.o.d",
+      "-Wp,-MD,/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/.uart.o.d",
       "-nostdinc",
       "-isystem",
       "/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include",
@@ -57,21 +57,21 @@
       "-DCC_HAVE_ASM_GOTO",
       "-DMODULE",
       "-DKBUILD_STR(s)=#s",
-      "-DKBUILD_BASENAME=KBUILD_STR(bmp280_iio)",
-      "-DKBUILD_MODNAME=KBUILD_STR(bmp280_iio)",
+      "-DKBUILD_BASENAME=KBUILD_STR(uart)",
+      "-DKBUILD_MODNAME=KBUILD_STR(uart)",
       "-c",
       "-o",
-      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/.tmp_bmp280_iio.o",
-      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_iio.c"
+      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/.tmp_uart.o",
+      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uart.c"
     ],
     "directory": "/home/ubuntu/linux/IMX6ULL/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek",
-    "file": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_iio.c",
-    "output": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/.tmp_bmp280_iio.o"
+    "file": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uart.c",
+    "output": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/.tmp_uart.o"
   },
   {
     "arguments": [
       "/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc",
-      "-Wp,-MD,/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/.bmp280_iio.mod.o.d",
+      "-Wp,-MD,/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/.uart.mod.o.d",
       "-nostdinc",
       "-isystem",
       "/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/4.9.4/include",
@@ -125,28 +125,28 @@
       "-Werror=date-time",
       "-DCC_HAVE_ASM_GOTO",
       "-DKBUILD_STR(s)=#s",
-      "-DKBUILD_BASENAME=KBUILD_STR(bmp280_iio.mod)",
-      "-DKBUILD_MODNAME=KBUILD_STR(bmp280_iio)",
+      "-DKBUILD_BASENAME=KBUILD_STR(uart.mod)",
+      "-DKBUILD_MODNAME=KBUILD_STR(uart)",
       "-DMODULE",
       "-c",
       "-o",
-      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_iio.mod.o",
-      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_iio.mod.c"
+      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uart.mod.o",
+      "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uart.mod.c"
     ],
     "directory": "/home/ubuntu/linux/IMX6ULL/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_alientek",
-    "file": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_iio.mod.c",
-    "output": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280_iio.mod.o"
+    "file": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uart.mod.c",
+    "output": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uart.mod.o"
   },
   {
     "arguments": [
       "/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc",
       "-c",
       "-o",
-      "bmp280APP",
-      "bmp280APP.c"
+      "uartAPP",
+      "uartAPP.c"
     ],
-    "directory": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280",
-    "file": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280APP.c",
-    "output": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/bmp280/bmp280APP"
+    "directory": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c",
+    "file": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uartAPP.c",
+    "output": "/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/sim800c/uartAPP"
   }
 ]

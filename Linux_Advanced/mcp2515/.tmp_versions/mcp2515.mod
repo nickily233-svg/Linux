@@ -1,0 +1,2 @@
+/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/mcp2515/mcp2515.ko
+/home/ubuntu/linux/IMX6ULL/Linux_Drivers/Linux_Advanced/mcp2515/mcp2515.o

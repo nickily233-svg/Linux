@@ -24,5 +24,7 @@ __used
 __attribute__((section(".modinfo"))) =
 "depends=";
 
+MODULE_ALIAS("spi:mcp2515");
+MODULE_ALIAS("of:N*T*Cmcp2515*");
 
-MODULE_INFO(srcversion, "3BD18456FB808A393C78A49");
+MODULE_INFO(srcversion, "59DD37DB84889DF17A5C624");
